@@ -4,7 +4,7 @@
 The project is about creating a model that can classify the drawings of the [Quick, Draw! Dataset](https://quickdraw.withgoogle.com/data). The Quick, Draw! Dataset is a collection of 50 million drawings across 345 categories, contributed by players of the game [Quick, Draw!](https://quickdraw.withgoogle.com/) by Google. The task is to build a classifier that can recognize the category of the drawing.
 
 ## Data
-The data used in the projectis the .ndjson files from the Quick, Draw! Dataset. It can be downloaded [here](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/simplified;tab=objects?prefix=&forceOnObjectsSortingFiltering=false). These files must be placed in a "data" folder in the root directory of the project. Specify in "class_names.txt" the classes you want to use. Then when calling the preprocessing function, the data will be converted to images and split into training and test datasets.
+The data used in the project is .ndjson files from the Quick, Draw! Dataset. They can be downloaded [here](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/simplified;tab=objects?prefix=&forceOnObjectsSortingFiltering=false). These files must be placed in a "data" folder in the root directory of the project. Specify in "class_names.txt" the classes you want to use. Then when calling the preprocessing function, the data will be converted to images and split into training and test datasets.
 
 ## Model
 The model is a simple CNN model with 3 convolutional layers and 2 fully connected layers. 
