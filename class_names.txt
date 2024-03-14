@@ -1,2 +1,10 @@
 axe
 bicycle
+flower
+snowman
+umbrella
+key
+castle
+bird
+windmill
+pineapple
