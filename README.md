@@ -13,11 +13,11 @@ The model is a simple CNN model with 2 convolutional layers and 2 fully connecte
 The model was trained on 8000 images and tested on 2000 images with 3 epochs. The training and validation loss and accuracy are shown below:
 
 Training loss:
-[Training loss](figures/initial_model/training_loss.png)
+![Training loss](figures/initial_model/training_loss.png)
 Test loss:
-[Validation loss](figures/initial_model/validation_loss.png)
+![Validation loss](figures/initial_model/validation_loss.png)
 Confusion Matrix:
-[Confusion matrix](figures/initial_model/confusion_matrix.png)
+![Confusion matrix](figures/initial_model/confusion_matrix.png)
 
 ## Conclusion
 The model is able to classify the drawings with an accuracy of 70% on the test data. 
