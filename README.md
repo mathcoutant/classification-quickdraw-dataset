@@ -14,8 +14,10 @@ The model was trained on 8000 images and tested on 2000 images with 3 epochs. Th
 
 Training loss:
 ![Training loss](figures/initial_model/training_loss.png)
+
 Test loss:
 ![Validation loss](figures/initial_model/validation_loss.png)
+
 Confusion Matrix:
 ![Confusion matrix](figures/initial_model/confusion_matrix.png)
 
