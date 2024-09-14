@@ -7,12 +7,17 @@ The project is about creating a model that can classify the drawings of the [Qui
 The data used in the project is .ndjson files from the Quick, Draw! Dataset. They can be downloaded [here](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/simplified;tab=objects?prefix=&forceOnObjectsSortingFiltering=false). These files must be placed in a "data" folder in the root directory of the project. Specify in "class_names.txt" the classes you want to use. Then when calling the preprocessing function, the data will be converted to images and split into training and test datasets.
 
 ## Model
-The model is a simple CNN model with 3 convolutional layers and 2 fully connected layers. 
-
-I will maybe try different options for the model, like using Transfer Learning with a pre-trained model (VGG or ResNet).
+The model is a simple CNN model with 2 convolutional layers and 2 fully connected layers. 
 
 ## Results
+The model was trained on 8000 images and tested on 2000 images with 3 epochs. The training and validation loss and accuracy are shown below:
 
+Training loss:
+[Training loss](figures/initial_model/training_loss.png)
+Test loss:
+[Validation loss](figures/initial_model/validation_loss.png)
+Confusion Matrix:
+[Confusion matrix](figures/initial_model/confusion_matrix.png)
 
 ## Conclusion
 The model is able to classify the drawings with an accuracy of 70% on the test data. 
@@ -23,6 +28,12 @@ The low accuracy can be explained by sevral factors :
 - They also have a very short time to draw the object, so the drawings are often very simple and unclean. This can explained the confusion between flowers and windmill, for example.
 
 The model can be further improved by using more complex models and by using more data.
+
+## Possible improvements
+- Sort the data to keep only the recognized drawings
+- More data, more epochs
+- Modify the learning rate and gamma
+- Use a more complex model
 
 ## References
 1. Quick, Draw! Dataset:
